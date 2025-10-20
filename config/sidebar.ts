@@ -16,11 +16,11 @@ type SocialMedia = {
 }
 
 export const SocialMedias: SocialMedia[] = [
-  {
-    label: 'Twitter',
-    href: '#',
-    icon: FaTwitter,
-  },
+  // {
+  //   label: 'Twitter',
+  //   href: '#',
+  //   icon: FaTwitter,
+  // },
   {
     label: 'Instagram',
     href: '#',
@@ -31,11 +31,11 @@ export const SocialMedias: SocialMedia[] = [
     href: 'https://www.linkedin.com/in/mahreen-siddiqui/',
     icon: FaLinkedin,
   },
-  {
-    label: 'StackOverflow',
-    href: '#',
-    icon: FaStackOverflow,
-  },
+  // {
+  //   label: 'StackOverflow',
+  //   href: '#',
+  //   icon: FaStackOverflow,
+  // },
   {
     label: 'Youtube',
     href: '#',
