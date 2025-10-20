@@ -1,36 +1,36 @@
 import { IconType } from 'react-icons'
 import {
-  SiDotNet,
+  SiDotnet,
   SiJavascript,
   SiTypescript,
-  SiNodeDotJs,
+  SiNodedotjs,
   SiGraphql,
   SiApollographql,
   SiPhp,
   SiReact,
-  SiNextDotJs,
+  SiNextdotjs,
   SiRedux,
-  SiStyledComponents,
+  SiStyledcomponents,
   SiGhost,
-  SiVueDotJs,
+  SiVuedotjs,
   SiDocker,
   SiGooglecloud,
   SiCpanel,
   SiRancher,
   SiGitlab,
   SiPostgresql,
-  SiMicrosoftsqlserver,
+  SiServerfault,
   SiMysql,
   SiMongodb,
   SiRedis,
-  SiSocketDotIo,
-  SiMaterialUi,
+  SiSocketdotio,
+  SiMui,
   SiFramer,
   SiGit,
   SiGnubash,
-  SiVisualstudiocode,
+  // VscVscodeInsiders,
   SiUnity,
-  SiMicrosoft,
+  // SiMicrosoft,
   SiElectron,
 } from 'react-icons/si'
 import { BsQuestionSquare } from 'react-icons/bs'
@@ -60,11 +60,11 @@ export const Skills: {
   backend: [
     {
       name: 'C# - .NET.Core',
-      icon: SiDotNet,
+      icon: SiDotnet,
     },
     {
       name: 'Node',
-      icon: SiNodeDotJs,
+      icon: SiNodedotjs,
     },
     {
       name: 'Javascript (ES6+)',
@@ -90,7 +90,7 @@ export const Skills: {
     },
     {
       name: 'NextJS',
-      icon: SiNextDotJs,
+      icon: SiNextdotjs,
     },
     {
       name: 'Apollo Graphql',
@@ -102,7 +102,7 @@ export const Skills: {
     },
     {
       name: 'VueJS',
-      icon: SiVueDotJs,
+      icon: SiVuedotjs,
     },
     {
       name: 'Ghost',
@@ -116,7 +116,7 @@ export const Skills: {
     },
     {
       name: 'MsSQL',
-      icon: SiMicrosoftsqlserver,
+      icon: SiServerfault,
     },
     {
       name: 'MySQL',
@@ -132,7 +132,7 @@ export const Skills: {
     },
     {
       name: 'SocketIO',
-      icon: SiSocketDotIo,
+      icon: SiSocketdotio,
     },
     {
       name: 'Google Pubsub',
@@ -168,7 +168,7 @@ export const Skills: {
   'ui frameworks': [
     {
       name: 'Styled Components',
-      icon: SiStyledComponents,
+      icon: SiStyledcomponents,
     },
     {
       name: 'AntDesign',
@@ -176,7 +176,7 @@ export const Skills: {
     },
     {
       name: 'MaterialUI',
-      icon: SiMaterialUi,
+      icon: SiMui,
     },
     {
       name: 'Framer Motion',
@@ -188,10 +188,10 @@ export const Skills: {
     },
   ],
   'productivity boost': [
-    {
-      name: 'VSCode',
-      icon: SiVisualstudiocode,
-    },
+    // {
+    //   name: 'VSCode',
+    //   icon: SiVisualstudiocode,
+    // },
     {
       name: 'Git',
       icon: SiGit,
@@ -222,10 +222,10 @@ export const Skills: {
     },
   ],
   desktop: [
-    {
-      name: 'Windows Forms, WPF',
-      icon: SiMicrosoft,
-    },
+    // {
+    //   name: 'Windows Forms, WPF',
+    //   icon: SiMicrosoft,
+    // },
     {
       name: 'Electron',
       icon: SiElectron,

@@ -148,7 +148,7 @@ const Sidebar = () => {
                 target="_blank"
                 _focus={{ boxShadow: 'none' }}
               >
-                <Icon w={6} h={6} as={socMedia.icon} color="currentColor" />
+                <Icon w={6} h={6} as={socMedia.icon as React.ElementType} color="currentColor" />
               </Link>
             ))}
           </MotionBox>

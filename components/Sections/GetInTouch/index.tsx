@@ -74,6 +74,10 @@ const GetInTouch = () => {
         paddingTop={{ base: 10, lg: 20, xl: 20 }}
         paddingBottom={{ base: 5, lg: 18 }}
       >
+          <Text as="span">
+            <Icon as={RiGithubFill as React.ElementType} h={6} w={6} /> <br />
+            Designed & Developed by <Icon as={RiHeartPulseFill as React.ElementType} /> <br />
+            
         <Link
           variant="description"
           textDecoration="none"
@@ -81,13 +85,8 @@ const GetInTouch = () => {
           href="https://github.com/mirzaahtsham/"
           target="_blank"
           _focus={{ boxShadow: 'none' }}
-        >
-          <Text as="span">
-            <Icon as={RiGithubFill} h={6} w={6} /> <br />
-            Designed & Developed by <Icon as={RiHeartPulseFill} /> <br />
-            Ahtsham Web Mentor <Icon as={RiCopyleftLine} /> {currentYear}
+        >Ahtsham Web Mentor </Link><Icon as={RiCopyleftLine as React.ElementType} /> {currentYear}
           </Text>
-        </Link>
       </Box>
     </Stack>
   )

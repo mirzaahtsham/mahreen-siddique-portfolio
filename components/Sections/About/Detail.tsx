@@ -13,13 +13,13 @@ import {
   useColorModeValue,
 } from '@chakra-ui/react'
 import {
-  SiDotNet,
+  SiDotnet,
   SiJavascript,
   SiTypescript,
   SiGraphql,
   SiReact,
-  SiNextDotJs,
-  SiNodeDotJs,
+  SiNextdotjs,
+  SiNodedotjs,
   SiDocker,
 } from 'react-icons/si'
 import { GiCoffeePot } from 'react-icons/gi'
@@ -75,44 +75,44 @@ const Detail = ({ onOpen }: ISkillSetModal) => {
             tea
           </Text>
         </Tooltip>{' '}
-        coffee <Icon as={GiCoffeePot} color={emphasis} />.
+        coffee <Icon as={GiCoffeePot as React.ElementType} color={emphasis} />.
       </Text>
 
       <SimpleGrid columns={2} spacing={4}>
         <List spacing={3}>
           <ListItem fontSize="small" display="flex" alignItems="center">
-            <ListIcon as={SiDotNet} color={emphasis} fontSize="2em" />
+            <ListIcon as={SiDotnet as React.ElementType} color={emphasis} fontSize="2em" />
             C# - .NET.Core
           </ListItem>
           <ListItem fontSize="small" display="flex" alignItems="center">
-            <ListIcon as={SiJavascript} color={emphasis} fontSize="2em" />
+            <ListIcon as={SiJavascript as React.ElementType} color={emphasis} fontSize="2em" />
             Javascript (ES6+)
           </ListItem>
           <ListItem fontSize="small" display="flex" alignItems="center">
-            <ListIcon as={SiTypescript} color={emphasis} fontSize="2em" />
+            <ListIcon as={SiTypescript as React.ElementType} color={emphasis} fontSize="2em" />
             Typescript
           </ListItem>
 
           <ListItem fontSize="small" display="flex" alignItems="center">
-            <ListIcon as={SiNodeDotJs} color={emphasis} fontSize="2em" />
+            <ListIcon as={SiNodedotjs as React.ElementType} color={emphasis} fontSize="2em" />
             Node
           </ListItem>
         </List>
         <List spacing={3}>
           <ListItem fontSize="small" display="flex" alignItems="center">
-            <ListIcon as={SiGraphql} color={emphasis} fontSize="2em" />
+            <ListIcon as={SiGraphql as React.ElementType} color={emphasis} fontSize="2em" />
             Graphql
           </ListItem>
           <ListItem fontSize="small" display="flex" alignItems="center">
-            <ListIcon as={SiReact} color={emphasis} fontSize="2em" />
+            <ListIcon as={SiReact as React.ElementType} color={emphasis} fontSize="2em" />
             React
           </ListItem>
           <ListItem fontSize="small" display="flex" alignItems="center">
-            <ListIcon as={SiNextDotJs} color={emphasis} fontSize="2em" />
+            <ListIcon as={SiNextdotjs as React.ElementType} color={emphasis} fontSize="2em" />
             NextJS
           </ListItem>
           <ListItem fontSize="small" display="flex" alignItems="center">
-            <ListIcon as={SiDocker} color={emphasis} fontSize="2em" />
+            <ListIcon as={SiDocker as React.ElementType} color={emphasis} fontSize="2em" />
             Docker
           </ListItem>
         </List>
@@ -124,7 +124,7 @@ const Detail = ({ onOpen }: ISkillSetModal) => {
             textAlign="left"
             onClick={onOpen}
           >
-            See my full arsenal <Icon as={IoMdOpen} />
+            See my full arsenal <Icon as={IoMdOpen as React.ElementType} />
           </Text>
         </Box>
       </SimpleGrid>

@@ -75,9 +75,9 @@ const ScrollMore = () => {
             variants={scrollMoreVariants}
           >
             <Icon
+              as={RiMouseLine as React.ElementType}
               w={6}
               h={6}
-              as={RiMouseLine}
               color="currentColor"
               opacity="0.75"
             />
