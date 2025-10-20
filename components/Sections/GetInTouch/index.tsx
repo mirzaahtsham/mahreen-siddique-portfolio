@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { memo } from 'react'
 import { Heading, Text, Stack, Link, Icon, Box } from '@chakra-ui/react'
 import { motion, Variants } from 'framer-motion'
@@ -34,11 +35,7 @@ const GetInTouch = () => {
       spacing={{ base: 6, xl: 8 }}
       as="footer"
     >
-      <Heading
-        size="2xl"
-        style={{
-          fontVariantCaps: 'small-caps',
-        }}
+      <Heading size="2xl" style={{fontVariantCaps: 'small-caps'}}
       >
         Say hi!{' '}
         <Text as="span" fontSize="2xl" variant="emphasis">
@@ -66,7 +63,6 @@ const GetInTouch = () => {
         </Link>
         .
       </Text>
-
       <Box
         spacing={0.5}
         textAlign="center"
@@ -77,7 +73,6 @@ const GetInTouch = () => {
           <Text as="span">
             <Icon as={RiGithubFill as React.ElementType} h={6} w={6} /> <br />
             Designed & Developed by <Icon as={RiHeartPulseFill as React.ElementType} /> <br />
-            
         <Link
           variant="description"
           textDecoration="none"

@@ -2,8 +2,8 @@ import { IconType } from 'react-icons'
 import {
   FaInstagram,
   FaLinkedin,
-  FaStackOverflow,
-  FaTwitter,
+  // FaStackOverflow,
+  // FaTwitter,
   FaYoutube,
   FaGithub,
   FaDev,
