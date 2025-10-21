@@ -1,6 +1,9 @@
 [build]
-  command = "CI=false next build --no-lint"
-  publish = "out"
+  command = "next build"
+  publish = ".next"
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
 
 [build.environment]
   NODE_VERSION = "18.18.0"
