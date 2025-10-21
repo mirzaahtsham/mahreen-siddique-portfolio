@@ -57,7 +57,6 @@ const Menu = () => {
       animate={controls}
       className={isMobile ? styles.mobileMenuContainer : ''}
     >
-      {/* @ts-expect-error Chakra UI complex prop typing */}
       <Container {...containerProps}>
         <Logo />
         <Navigation />
