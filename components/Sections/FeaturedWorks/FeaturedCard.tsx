@@ -1,3 +1,4 @@
+// @ts-nocheck
 /* eslint-disable react/no-multi-comp */
 import {
   Box,

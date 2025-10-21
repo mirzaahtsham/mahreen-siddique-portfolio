@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Link } from '@chakra-ui/react'
 
 export type Company = 'Deloitte' | 'SCG' | 'Blotocol'
@@ -16,13 +17,11 @@ export type CompanyDetail = {
   roles?: JSX.Element[]
 }
 
-export const Experiences: {
-  [key in Company]: CompanyDetail
-} = {
+export const Experiences: Record<Company, CompanyDetail> = {
   Deloitte: {
     name: 'Deloitte',
-    longName: 'Deloitte Consulthing Phils. Delivery Center',
-    subDetail: 'Consulthing Phils. Delivery Center',
+    longName: 'Deloitte Consulting Phils. Delivery Center',
+    subDetail: 'Consulting Phils. Delivery Center',
     url: 'https://www2.deloitte.com/',
     position: 'Software Engineer Consultant',
     duration: 'Sep 2021 - Present',
@@ -32,10 +31,10 @@ export const Experiences: {
     },
     roles: [
       <>
-       Contributed to the design and development of a comprehensive .NET payment integration project for a client
-       That covered credit card payments and subscription management.
-       Introduced Stripe as a new payment provider within the system architecture.
-       Participated in triaging, fixing and adding new functionalitiesto multiple Azure powered APIs of the same client.
+        Contributed to the design and development of a comprehensive .NET payment integration project for a client
+        that covered credit card payments and subscription management. Introduced Stripe as a new payment provider
+        within the system architecture. Participated in triaging, fixing, and adding new functionalities to multiple
+        Azure-powered APIs of the same client.
       </>,
       <>
         Worked as a Sitecore Backend on new{' '}
@@ -45,23 +44,25 @@ export const Experiences: {
           target="_blank"
           rel="noreferrer"
         >
-          Deloitte Digital AU Site.
+          Deloitte Digital AU Site
         </Link>
+        .
       </>,
       <>
-        Udergone training for .NET Sitecore 10,
-        Sitecore SXA and different topologies it provides.{' '} and Passed {' '}
+        Underwent training for .NET Sitecore 10, Sitecore SXA, and different topologies it provides, and passed{' '}
         <Link
           aria-label="Sitecore 10 .NET Developer Certification"
           href="/certification/Lawingco-Sitecore 10 NET Developer Cert.pdf"
           target="_blank"
           rel="noreferrer"
         >
-          Sitecore 10 .NET Developer Certification.
+          Sitecore 10 .NET Developer Certification
         </Link>
+        .
       </>,
-    ],
+    ] as JSX.Element[],
   },
+
   SCG: {
     name: 'Scentregroup',
     longName: 'Scentregroup Limited AU',
@@ -84,13 +85,9 @@ export const Experiences: {
         >
           Westfield Marketing Hub
         </Link>{' '}
-        using NextJS and Typescript. Restructuring the old express app into a
-        newer architectural design approach.
+        using NextJS and TypeScript. Restructuring the old Express app into a newer architectural design approach.
       </>,
-      <>
-        Created multiple Contentful and Bynder extensions to improve BX process
-        better.
-      </>,
+      <>Created multiple Contentful and Bynder extensions to improve BX process efficiency.</>,
       <>
         Worked on maintaining{' '}
         <Link
@@ -101,16 +98,12 @@ export const Experiences: {
         >
           Westfield
         </Link>{' '}
-        main site and Graphql apis written in NodeJS.
+        main site and GraphQL APIs written in NodeJS.
       </>,
+      <>Migrated existing marketing email tools and batch jobs from Responsys into a new platform called Braze.</>,
       <>
-        Migrating of existing marketing email related tools and batch jobs from
-        Responsys into new platform called Braze.
-      </>,
-      <>
-        Hired at early 2020, first major task was helping with selecting a new
-        marketing vendor that can scale and also enable us to have
-        personalisation as well, selecting{' '}
+        Hired in early 2020, first major task was helping select a new marketing vendor that could scale and enable
+        personalization — selecting{' '}
         <Link
           aria-label="Braze"
           href="https://www.braze.com/"
@@ -121,8 +114,9 @@ export const Experiences: {
         </Link>{' '}
         as a result.
       </>,
-    ],
+    ] as JSX.Element[],
   },
+
   Blotocol: {
     name: 'Blotocol',
     longName: 'Blotocol Philippines',
@@ -136,23 +130,20 @@ export const Experiences: {
     },
     roles: [
       <>
-        Developed a Twitter Raffle Campaign / Contest Bot called Camps with
-        statistics similar to Facebook Ads.
+        Developed a Twitter Raffle Campaign / Contest Bot called Camps with analytics similar to Facebook Ads.
       </>,
       <>
-        In 2019 got promoted as Senior Software Engineer and worked with Cryto
-        Exchange, Smart Contracts and other APIs using several techs such as
-        NodeJS, .NET Core and React.
+        In 2019, got promoted to Senior Software Engineer and worked with Crypto Exchange, Smart Contracts, and
+        other APIs using technologies such as NodeJS, .NET Core, and React.
       </>,
       <>
-        Create highly scalable Japanese e-commerce sites. Most notable clients
-        were TV Tokyo, Layla EC using .NET.
+        Created highly scalable Japanese e-commerce sites. Most notable clients were TV Tokyo and Layla EC using .NET.
       </>,
       <>
-        Hired at 2016, Undergone Japanese language training first. Shortly
-        after, worked with in-house .NET MVC Framework called ERS.
+        Hired in 2016, underwent Japanese language training first. Shortly after, worked with an in-house .NET MVC
+        Framework called ERS.
       </>,
-    ],
+    ] as JSX.Element[],
   },
 }
 

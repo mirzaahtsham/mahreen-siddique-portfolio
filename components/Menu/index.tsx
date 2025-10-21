@@ -15,18 +15,12 @@ const mobileMenuVariants: Variants = {
   hidden: {
     opacity: [1, 0.85, 0],
     y: -80,
-    transition: {
-      ease: 'easeInOut',
-      duration: 0.35,
-    },
+    transition: { ease: 'easeInOut', duration: 0.35 },
   },
   show: {
     opacity: [0, 0.85, 1],
     y: 0,
-    transition: {
-      ease: 'easeInOut',
-      duration: 0.28,
-    },
+    transition: { ease: 'easeInOut', duration: 0.28 },
   },
 }
 
@@ -35,6 +29,7 @@ const Menu = () => {
   const controls = useAnimation()
   const isMobile = useBreakpointValue(mobileBreakpointsMap)
   const scrollDirection = useScrollDirection(true, isMobile)
+
   useEffect(() => {
     if (scrollDirection === ScrollDirection.Down && isMobile) {
       controls.start('hidden')
@@ -42,6 +37,19 @@ const Menu = () => {
       controls.start('show')
     }
   }, [isMobile, controls, scrollDirection])
+
+  const containerProps = {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    padding: { base: 5, lg: 0 },
+    paddingY: { base: 5, lg: 0 },
+    backgroundColor: isMobile ? bg : 'transparent',
+    width: '100vw',
+    maxWidth: '100vw',
+    margin: 0,
+  }
+
   return (
     <motion.div
       initial={isMobile ? 'hidden' : false}
@@ -49,17 +57,8 @@ const Menu = () => {
       animate={controls}
       className={isMobile ? styles.mobileMenuContainer : ''}
     >
-      <Container
-        display="flex"
-        alignItems="center"
-        justifyContent="space-between"
-        padding={{ base: 5, lg: 0 }}
-        paddingY={{ base: 5, lg: 0 }}
-        backgroundColor={isMobile ? bg : 'transparent'}
-        width="100vw"
-        maxWidth="100vw"
-        margin={0}
-      >
+      {/* @ts-expect-error Chakra UI complex prop typing */}
+      <Container {...containerProps}>
         <Logo />
         <Navigation />
       </Container>

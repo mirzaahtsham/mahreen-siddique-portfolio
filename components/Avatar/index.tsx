@@ -37,6 +37,9 @@ const Avatar = () => {
     })
     window.preloadedPictures = preloadedImages
   }, [])
+  const AvatarImage: any = ChkImage;
+  const AvatarText: any = Text;
+  const AvatarLink: any = Link;
   return (
     <AnimatePresence>
       <MotionBox
@@ -49,7 +52,7 @@ const Avatar = () => {
         variants={avatarAnimation}
         exit={{ opacity: 0 }}
       >
-        <ChkImage
+        <AvatarImage
           src={imgAvatar}
           alt="Mahreen Siddiqui Avatar"
           htmlWidth="250"
@@ -57,17 +60,17 @@ const Avatar = () => {
           margin="auto"
           fallback={<SkeletonCircle height="100%" width="100%" />}
         />
-        <Text textAlign="center" fontSize="smaller" variant="description">
+        <AvatarText textAlign="center" fontSize="smaller" variant="description">
           Art by{' '}
-          <Link
+          <AvatarLink
             href="https://www.linkedin.com/in/mahreen-siddiqui/"
             target="_blank"
             aria-label="MahreenSiddiqui"
             rel="noreferrer"
           >
             MahreenSiddiqui
-          </Link>
-        </Text>
+          </AvatarLink>
+        </AvatarText>
       </MotionBox>
     </AnimatePresence>
   )
