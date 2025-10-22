@@ -61,14 +61,14 @@ const Avatar = () => {
           fallback={<SkeletonCircle height="100%" width="100%" />}
         />
         <AvatarText textAlign="center" fontSize="smaller" variant="description">
-          Art by{' '}
+          Meet me{' '}
           <AvatarLink
             href="https://www.linkedin.com/in/mahreen-siddiqui/"
             target="_blank"
             aria-label="MahreenSiddiqui"
             rel="noreferrer"
           >
-            MahreenSiddiqui
+            Mahreen Siddiqui
           </AvatarLink>
         </AvatarText>
       </MotionBox>
