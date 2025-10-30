@@ -3,8 +3,8 @@ import {
   FaInstagram,
   FaLinkedin,
   // FaStackOverflow,
-  // FaTwitter,
-  FaYoutube,
+  FaFacebook,
+  FaMedium,
   FaGithub,
   FaDev,
 } from 'react-icons/fa'
@@ -16,11 +16,11 @@ type SocialMedia = {
 }
 
 export const SocialMedias: SocialMedia[] = [
-  // {
-  //   label: 'Twitter',
-  //   href: '#',
-  //   icon: FaTwitter,
-  // },
+  {
+    label: 'Facebook',
+    href: 'https://www.facebook.com/mahreen.siddiqui.923',
+    icon: FaFacebook,
+  },
   {
     label: 'Instagram',
     href: '#',
@@ -37,18 +37,18 @@ export const SocialMedias: SocialMedia[] = [
   //   icon: FaStackOverflow,
   // },
   {
-    label: 'Youtube',
+    label: 'Medium',
     href: '#',
-    icon: FaYoutube,
+    icon: FaMedium,
   },
-  {
-    label: 'Github',
-    href: '#',
-    icon: FaGithub,
-  },
-  {
-    label: 'Dev.to',
-    href: '#',
-    icon: FaDev,
-  },
+  // {
+  //   label: 'Github',
+  //   href: '#',
+  //   icon: FaGithub,
+  // },
+  // {
+  //   label: 'Dev.to',
+  //   href: '#',
+  //   icon: FaDev,
+  // },
 ]

@@ -47,9 +47,9 @@ const Logo = () => {
             className={!isMobile ? styles.logo : ""}
             boxSize={isMobile ? "30px" : "50px"}
             objectFit="cover"
-            src="./logo.png"
+            src="./logo-blue.svg"
             alt="Mahreen Siddique Logo"
-            fallbackSrc="./logo.png"
+            fallbackSrc="./logo-blue.svg"
             variants={simpleOpacity}
             initial="initial"
             animate={isLogoLoaded ? "animate" : "initial"}
@@ -61,8 +61,8 @@ const Logo = () => {
             className={!isMobile ? styles.logo : ""}
             boxSize={isMobile ? "30px" : "50px"}
             objectFit="cover"
-            src="./logo_light.png"
-            fallbackSrc="./logo_light.png"
+            src="./logo-blue-light.svg"
+            fallbackSrc="./logo-blue-light.svg"
             alt="Mahreen Siddique Logo"
             variants={simpleOpacity}
             initial="initial"

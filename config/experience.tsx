@@ -1,7 +1,7 @@
 // @ts-nocheck
 import { Link } from '@chakra-ui/react'
 
-export type Company = 'Deloitte' | 'SCG' | 'Blotocol'
+export type Company = 'Medmax Technologies LLC' | 'Medmax RCM' | 'SMAG Technologies' | 'SEED GOC' | 'Scottish Kilt Shop' | 'JR Private Credit Fund' | 'JR dellas Wealth' 
 
 export type CompanyDetail = {
   name: string
@@ -19,12 +19,12 @@ export type CompanyDetail = {
 
 export const Experiences: Record<Company, CompanyDetail> = {
   Deloitte: {
-    name: 'Deloitte',
+    name: 'Medmax Technologies LLC',
     longName: 'Deloitte Consulting Phils. Delivery Center',
     subDetail: 'Consulting Phils. Delivery Center',
-    url: 'https://www2.deloitte.com/',
-    position: 'Software Engineer Consultant',
-    duration: 'Sep 2021 - Present',
+    url: 'https://medmaxtechnologiesllc.com/',
+    position: 'SEO Marketing Consultant',
+    duration: 'Sep 2020 - Present',
     logo: {
       light: '/worked_at_logos/deloitte/Deloitte_logo_black.png',
       dark: '/worked_at_logos/deloitte/Deloitte_logo.png',
@@ -39,12 +39,12 @@ export const Experiences: Record<Company, CompanyDetail> = {
       <>
         Worked as a Sitecore Backend on new{' '}
         <Link
-          aria-label="Deloitte Digital AU"
-          href="https://www.deloittedigital.com.au/"
+          aria-label="Medmax Technologies LLC"
+          href="https://medmaxtechnologiesllc.com/"
           target="_blank"
           rel="noreferrer"
         >
-          Deloitte Digital AU Site
+          Medmax Technologies LLC
         </Link>
         .
       </>,
@@ -64,7 +64,7 @@ export const Experiences: Record<Company, CompanyDetail> = {
   },
 
   SCG: {
-    name: 'Scentregroup',
+    name: 'Medmax RCM',
     longName: 'Scentregroup Limited AU',
     subDetail: 'via Prosource BPO',
     url: 'https://www.scentregroup.com/',

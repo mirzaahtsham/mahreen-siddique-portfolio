@@ -83,7 +83,7 @@ const Sidebar = () => {
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
           >
-            Siddique
+            Siddiqui
           </MotionHeading>
           <MotionText
             colorScheme="gray"
@@ -91,7 +91,7 @@ const Sidebar = () => {
             className={styles.marginTopForce}
             variants={fadeInUp}
           >
-            Or you could call me KL. That works too . . .
+            Or you could call me Mahreen. That works too . . .
           </MotionText>
 
           <MotionHeading
@@ -137,7 +137,7 @@ const Sidebar = () => {
             Get in touch!
           </MotionButton>
 
-          <MotionBox d="flex" variants={simpleOpacity}>
+          <MotionBox d="flex"  sx={{ gap: 16 }} variants={simpleOpacity}>
             {SocialMedias.map((socMedia) => (
               <Link
                 variant="description"

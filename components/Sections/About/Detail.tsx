@@ -1,5 +1,8 @@
 // @ts-nocheck
 import { memo } from 'react'
+import AhrefsIcon from "../../../public/Skills/ahrefs-logo-blue.svg"
+import { SpyFudark } from "../../../public/Skills/spyfu-dark.svg"
+import { Spyfulight } from "../../../public/Skills/spyfu-light.svg"
 import {
   Heading,
   Text,
@@ -14,6 +17,19 @@ import {
   useColorModeValue,
 } from '@chakra-ui/react'
 import {
+  
+  SiGoogleanalytics,   // GA4
+  SiGooglesearchconsole,            // GSC (Google Search Console)
+  SiBing,              // Bing Webmaster (note spelling: “Bing”, not “Being”)
+  SiSemrush,           // Semrush
+  SiSpyse,             // Closest to SpyFu (SpyFu icon not available)
+  SiUberspace,         // Closest to Ubersuggest (no official Ubersuggest icon)
+  SiMoz,               // Moz
+  SiAhrefs,            // Ahrefs
+  SiCanva,             // Canva
+  SiMeta,              // Meta (Facebook/Meta Business Manager)
+  SiGoogleads,         // Google Ads Manager
+  SiAlamy,            // Alamy (no official Ahref icon)
   SiDotnet,
   SiJavascript,
   SiTypescript,
@@ -31,9 +47,9 @@ type ISkillSetModal = {
 }
 
 const Detail = ({ onOpen }: ISkillSetModal) => {
-  const emphasis = useColorModeValue('teal.500', 'cyan.200')
+  const emphasis = useColorModeValue('#0F6DF6', '#0ACDFA')
   const currentYear = new Date().getFullYear()
-  const professionalYears = currentYear - 2016
+  const professionalYears = currentYear - 2014
 
   return (
     <Stack
@@ -82,42 +98,42 @@ const Detail = ({ onOpen }: ISkillSetModal) => {
       <SimpleGrid columns={2} spacing={4}>
         <List spacing={3}>
           <ListItem fontSize="small" display="flex" alignItems="center">
-            <ListIcon as={SiDotnet as React.ElementType} color={emphasis} fontSize="2em" />
-            C# - .NET.Core
+            <ListIcon as={SiGoogleanalytics as React.ElementType} color={emphasis} fontSize="2em" />
+            Google Analytics GA4
           </ListItem>
           <ListItem fontSize="small" display="flex" alignItems="center">
-            <ListIcon as={SiJavascript as React.ElementType} color={emphasis} fontSize="2em" />
-            Javascript (ES6+)
+            <ListIcon as={SiGooglesearchconsole as React.ElementType} color={emphasis} fontSize="2em" />
+            Google Search Console
           </ListItem>
           <ListItem fontSize="small" display="flex" alignItems="center">
-            <ListIcon as={SiTypescript as React.ElementType} color={emphasis} fontSize="2em" />
-            Typescript
+            <ListIcon as={SiSemrush as React.ElementType} color={emphasis} fontSize="2em" />
+            Semrush
           </ListItem>
 
           <ListItem fontSize="small" display="flex" alignItems="center">
-            <ListIcon as={SiNodedotjs as React.ElementType} color={emphasis} fontSize="2em" />
-            Node
+            <ListIcon as={SiCanva as React.ElementType} color={emphasis} fontSize="2em" />
+            Canva
           </ListItem>
         </List>
         <List spacing={3}>
           <ListItem fontSize="small" display="flex" alignItems="center">
-            <ListIcon as={SiGraphql as React.ElementType} color={emphasis} fontSize="2em" />
-            Graphql
+            <ListIcon as={SiMeta as React.ElementType} color={emphasis} fontSize="2em" />
+            Meta Business Manager
           </ListItem>
           <ListItem fontSize="small" display="flex" alignItems="center">
-            <ListIcon as={SiReact as React.ElementType} color={emphasis} fontSize="2em" />
-            React
+            <ListIcon as={SiGoogleads as React.ElementType} color={emphasis} fontSize="2em" />
+            Google Ads Manager
           </ListItem>
+          {/* <ListItem fontSize="small" display="flex" alignItems="center">
+            <ListIcon as={ahrefs-logo-blue.svg as React.ElementType} color={emphasis} fontSize="2em" />
+            Ahrefs
+          </ListItem> */}
           <ListItem fontSize="small" display="flex" alignItems="center">
-            <ListIcon as={SiNextdotjs as React.ElementType} color={emphasis} fontSize="2em" />
-            NextJS
-          </ListItem>
-          <ListItem fontSize="small" display="flex" alignItems="center">
-            <ListIcon as={SiDocker as React.ElementType} color={emphasis} fontSize="2em" />
-            Docker
+            <ListIcon as={SiAlamy as React.ElementType} color={emphasis} fontSize="2em" />
+            Ahref
           </ListItem>
         </List>
-        <Box>
+        {/* <Box>
           <Text
             as="button"
             variant="emphasis"
@@ -127,7 +143,7 @@ const Detail = ({ onOpen }: ISkillSetModal) => {
           >
             See my full arsenal <Icon as={IoMdOpen as React.ElementType} />
           </Text>
-        </Box>
+        </Box> */}
       </SimpleGrid>
     </Stack>
   )

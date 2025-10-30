@@ -34,13 +34,13 @@ const styles = {
 
 const textVariants = {
   emphasis: (props) => ({
-    color: mode('teal.500', 'cyan.200')(props),
+    color: mode('#0F6DF6', '#0ACDFA')(props),
   }),
   description: (props) => ({
     color: mode('gray.800', 'gray.400')(props),
   }),
   accent: (props) => ({
-    color: mode('black.400', 'cyan.200')(props),
+    color: mode('black.400', '#0ACDFA')(props),
   }),
   accentAlternative: (props) => ({
     color: mode('#595959', '#A6A6A6')(props),
@@ -57,14 +57,14 @@ const theme = extendTheme({
   components: {
     Link: {
       baseStyle: (props) => ({
-        color: mode('teal.500', 'cyan.200')(props),
+        color: mode('#0F6DF6', '#0ACDFA')(props),
       }),
       variants: {
         ...textVariants,
         description: (props) => ({
           color: mode('gray.800', 'gray.400')(props),
           _hover: {
-            color: mode('teal.500', 'cyan.200')(props),
+            color: mode('#0F6DF6', '#0ACDFA')(props),
             textDecoration: 'none',
           },
         }),
@@ -75,7 +75,7 @@ const theme = extendTheme({
     Button: {
       variants: {
         outline: (props) => ({
-          borderColor: mode('black.400', 'cyan.200')(props),
+          borderColor: mode('black.400', '#0ACDFA')(props),
         }),
         outlineAlternative: (props) => ({
           borderWidth: '1px',

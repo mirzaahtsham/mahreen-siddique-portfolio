@@ -45,7 +45,7 @@ const RenderIcon: React.FC<{ icon: any; color?: string; size?: string | number; 
 }
 
 const SkillList: React.FC<{ title: string; columns: Skill[][] }> = ({ title, columns }) => {
-  const emphasis = useColorModeValue('teal.500', 'cyan.200')
+  const emphasis = useColorModeValue('#0F6DF6', '#0ACDFA')
   const [colOne, colTwo = []] = columns
 
   return (

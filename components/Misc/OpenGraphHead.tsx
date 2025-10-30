@@ -13,7 +13,7 @@ const OpenGraphHead = () => (
     <meta property="og:type" content="profile" />
     <meta
       property="og:image"
-      content="https://kllawingco.netlify.app/KL_avatar.png"
+      content="https://mahreensiddiqui.netlify.app/Mahreen-avatar.webp"
     ></meta>
   </Head>
 )

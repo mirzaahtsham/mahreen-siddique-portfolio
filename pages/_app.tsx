@@ -5,7 +5,7 @@ import { AnimatePresence } from 'framer-motion'
 import theme from 'config/theme'
 import FavIconProvider from 'components/Misc/FavIconProvider'
 
-function KLSite({ Component, pageProps }: AppProps): JSX.Element {
+function AWMSite({ Component, pageProps }: AppProps): JSX.Element {
   return (
     <AnimatePresence exitBeforeEnter>
       <ChakraProvider theme={theme}>
@@ -16,4 +16,4 @@ function KLSite({ Component, pageProps }: AppProps): JSX.Element {
     </AnimatePresence>
   )
 }
-export default KLSite
+export default AWMSite

@@ -39,6 +39,8 @@ import { FaSourcetree } from 'react-icons/fa'
 import { IoLogoPwa } from 'react-icons/io5'
 
 export type SkillCategory =
+  // | 'analytics'
+  // | 'SEOTools'
   | 'backend'
   | 'frontend'
   | 'cicd'
